@@ -1,0 +1,1 @@
+(map deref (vals (ns-map (symbol "clojure.core"))))

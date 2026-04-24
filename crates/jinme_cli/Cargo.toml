@@ -1,0 +1,23 @@
+[package]
+name = "jinme_cli"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+#jinme_handle = { version = "0.0.0", path = "../jinme_handle" }
+#jinme_read = { version = "0.0.0", path = "../jinme_read" }
+#jinme_value = { version = "0.0.0", path = "../jinme_value" }
+jinme = { version = "0.0.0", path = "../jinme" }
+derive_more = { version = "2.1.0", features = ["full"] }
+itertools = "0.14.0"
+# rustyline = "17.0.2"
+
+tracing               = { version = "0.1.44" }
+# tracing-subscriber    = { version = "0.3.22", features = ["env-filter", "fmt", "json"] }
+tracing-subscriber    = { version = "0.3.22", features = ["env-filter", "fmt"] }
+tracing-opentelemetry = { version = "0.32.1" }
+opentelemetry         = { version = "0.31.0" }
+opentelemetry_sdk     = { version = "0.31.0", features = ["rt-tokio-current-thread"] }
+opentelemetry-otlp    = { version = "0.31.0", features = ["trace", "grpc-tonic"] }
+tokio                 = { version = "1.49.0", features = ["rt-multi-thread", "macros"] }
+futures = "0.3.32"

@@ -1,0 +1,5 @@
+/target
+crates/*/target
+.DS_Store
+.clj-kondo/
+.lsp/
